@@ -7,12 +7,10 @@
 //
 
 #include <stdio.h>
+#include "CGameController.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    return CGameController_Run();
 }
 

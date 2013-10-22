@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA90A38118165718003CFBBA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA90A38018165718003CFBBA /* main.c */; };
 		FA90A38318165718003CFBBA /* CTicTacToe.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA90A38218165718003CFBBA /* CTicTacToe.1 */; };
+		FA90A38C18165804003CFBBA /* CGameController.c in Sources */ = {isa = PBXBuildFile; fileRef = FA90A38B18165804003CFBBA /* CGameController.c */; };
+		FA90A39018165898003CFBBA /* CGameBoard.c in Sources */ = {isa = PBXBuildFile; fileRef = FA90A38F18165898003CFBBA /* CGameBoard.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		FA90A37D18165718003CFBBA /* CTicTacToe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CTicTacToe; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA90A38018165718003CFBBA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FA90A38218165718003CFBBA /* CTicTacToe.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CTicTacToe.1; sourceTree = "<group>"; };
+		FA90A389181657A8003CFBBA /* CGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGameController.h; sourceTree = "<group>"; };
+		FA90A38B18165804003CFBBA /* CGameController.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGameController.c; sourceTree = "<group>"; };
+		FA90A38E18165881003CFBBA /* CGameBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGameBoard.h; sourceTree = "<group>"; };
+		FA90A38F18165898003CFBBA /* CGameBoard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGameBoard.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,30 @@
 		FA90A37F18165718003CFBBA /* CTicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				FA90A38D18165867003CFBBA /* GameBoard */,
+				FA90A38A181657F0003CFBBA /* GameController */,
 				FA90A38018165718003CFBBA /* main.c */,
 				FA90A38218165718003CFBBA /* CTicTacToe.1 */,
 			);
 			path = CTicTacToe;
+			sourceTree = "<group>";
+		};
+		FA90A38A181657F0003CFBBA /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				FA90A389181657A8003CFBBA /* CGameController.h */,
+				FA90A38B18165804003CFBBA /* CGameController.c */,
+			);
+			name = GameController;
+			sourceTree = "<group>";
+		};
+		FA90A38D18165867003CFBBA /* GameBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FA90A38E18165881003CFBBA /* CGameBoard.h */,
+				FA90A38F18165898003CFBBA /* CGameBoard.c */,
+			);
+			name = GameBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA90A39018165898003CFBBA /* CGameBoard.c in Sources */,
 				FA90A38118165718003CFBBA /* main.c in Sources */,
+				FA90A38C18165804003CFBBA /* CGameController.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
