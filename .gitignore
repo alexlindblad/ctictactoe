@@ -16,3 +16,10 @@
 *.exe
 *.out
 *.app
+
+# Xcode/Mac
+*.xcworkspace/
+xcuserdata/
+build/
+.DS_Store
+*~
